@@ -1,0 +1,2 @@
+
+alert("Meu primeiro script");
