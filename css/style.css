@@ -5,12 +5,22 @@ body {
   margin: auto;
 }
 
-a {
-  text-decoration: underline;
-  color: dimgrey;
+.button {
+  background: #494646;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: azure;
+  font-size: medium;
+  width: 200px;
+  height: 40px;
+  margin: auto;
 }
 
-
+/* 
+/* a {
+  text-decoration: underline;
+  color: dimgrey;
+} 
+ 
 #title,
 .subtitle,
 .post_title {
@@ -57,9 +67,9 @@ status .subtitle {
 .post_content {
   margin: 0;
   margin-bottom: 15px;
-  /* text-transform: capitalize;   
+  text-transform: capitalize;   
   Não gostei fica muito feio um texto grande com 
-  todas as letras iniciais  em maiusculo*/
+  todas as letras iniciais  em maiusculo
 
 }
 
@@ -82,5 +92,7 @@ status .subtitle {
   color: blue;
   text-align: center;
   /* align-content: center;
-  align-items: center; */
+  align-items: center; 
 }
+
+*/
