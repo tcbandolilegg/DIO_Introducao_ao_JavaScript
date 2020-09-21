@@ -8,7 +8,7 @@
     <title>Introdução ao JavaScript</title>
   </head>
 
-  <body>
+  <body onload="load()">
     <h1>Minha página com implementação do JS</h1>
     <button type="button" class="button" onclick="soma()">
       Clique para somar
@@ -29,6 +29,27 @@
       Clique para dividir
     </button>
     <h3 id="divisao"></h3>
+
+    <button type="button" class="button" onclick="mesmaJanela()">
+      Mesma Jannela
+    </button>
+    <h3 id="mesmaJanela"></h3>
+
+    <button type="button" class="button" onclick="outraJanela()">
+      Outra Jannela
+    </button>
+    <h3 id="outraJanela"></h3>
+
+    <p id="moveMouse" onmouseover="moveMouse(this)" onmouseout="voltar(this)">
+      Passe o mouse aqui
+    </p>
+
+    <select class="select" onchange="change(this)">
+      <option value="1">Valor 1</option>
+      <option value="2">Valor 2</option>
+      <option value="3">Valor 3</option>
+    </select>
+    <p></p>
 
     <button type="button" class="button" onclick="agradecimento()">
       Clique para finalizar

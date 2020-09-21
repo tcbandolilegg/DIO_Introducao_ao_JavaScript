@@ -1,3 +1,5 @@
+moveMousev = false;
+primeiraVez = true;
 function variaveis() {
 
   console.log("******************** trabalhando variaveis *******************");
@@ -182,9 +184,58 @@ function multiplicacao() {
   var result = parseInt(num1) * parseInt(num2);
   console.log(result);
   document.getElementById("multiplicacao").innerHTML = "A multiplicação é : <b>" + result + "</b>";
+}
+
+function mesmaJanela() {
+  console.log(document.getElementById("mesmaJanela"));
+  window.location.href = "http://www.ascenderideias.com.br/";
+}
+
+function outraJanela() {
+  console.log(document.getElementById("outraJanela"));
+  window.open("http://www.google.com.br");
+}
+
+// testando  a passagem do Mouse
+// function moveMouse() {
+//   console.log(document.getElementById("moveMouse"));
+//   if (primeiraVez) {
+//     document.getElementById("moveMouse").innerHTML = "Você passou o mouse e alterou o texto";
+//     moveMousev = true;
+//     primeiraVez = false;
+//   } else {
+//     console.log("antes do teste do move mouse ", moveMousev)
+//     if (moveMousev) {
+//       document.getElementById("moveMouse").innerHTML = "Passe o mouse aqui";
+//       moveMousev = false;
+//     } else {
+//       document.getElementById("moveMouse").innerHTML = "Você passou o mouse e alterou o texto";
+//       moveMousev = true;
+//     }
+
+//   }
+// }
+
+function voltar(element) {
+  // document.getElementById("moveMouse").innerHTML = "Passe o mouse aqui";
+  console.log(document.getElementById("moveMouse"));
+  element.innerHTML = "Passe o mouse aqui";
 
 }
 
+
+function moveMouse(element) {
+  console.log(document.getElementById("moveMouse"));
+  element.innerHTML = "Você passou o mouse e alterou o texto";
+}
+
+function change(element) {
+  console.log(element.value);
+}
+
+function load() {
+  alert("pagina carregada");
+}
 
 
 
